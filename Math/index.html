@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Maths</title>
+
+    <style media="screen">
+      @font-face {
+        src: url('NotoSans.ttf');
+        font-family: 'noto';
+      }
+      body {
+        margin: 0; padding: 0; display: flex; font-size: 18pt;
+        text-align: center; font-family: noto;
+      }
+      h1 {
+        width: 100%; font-weight: bold;
+      }
+      .calculator {
+        width: 70vw; margin: 0 auto; margin-top: 10vh; background: #dddd; display: flex;
+        justify-content: space-around; flex-wrap: wrap; box-shadow: 0 0 1vh #555a;
+      }
+      button {
+        padding: 1vh 5vw; margin: 2vh 2vw; font-size: 3vh;
+        background: #eeee; border: 0; box-shadow: 0 0 1vh #4444; outline: 0;
+      }
+      span {
+        font-size: 2vh;
+      }
+      #history {
+        width: 80%; background: #cccc; box-shadow: 0 0 1vh #4444;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <div class="calculator">
+      <h1>In following calculations pi = 3.14</h1>
+      <button onclick="spheareArea()">Area of spheare. <br><span>4 * 3.14 (&pi;) * r²</span></button>
+      <button onclick="spheareVolume()">Volume of spheare. <br><span>4 * 3.14 (&pi;) * r³ / 4 </span></button>
+      <button onclick="coneArea()">Area of cone. <br><span>3.14 (&pi;) * r * s</span></button>
+      <button onclick="coneVolume()">Volume of cone. <br><span>3,14 (&pi;) * r² * h / 3</span></button>
+      <h1>History:</h1>
+      <p id="history"></p>
+    </div>
+
+
+
+    <script type="text/javascript" src="js.js">
+    </script>
+  </body>
+</html>
