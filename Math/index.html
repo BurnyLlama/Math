@@ -30,6 +30,9 @@
       #history {
         width: 80%; background: #cccc; box-shadow: 0 0 1vh #4444;
       }
+      #pi {
+        width: 85%;
+      }
     </style>
   </head>
   <body>
@@ -37,7 +40,7 @@
 
 
     <div class="calculator">
-      <button onclick="definePi()">Change pi (&pi;), default = 3.14 </button>
+      <button onclick="definePi()" id="pi">Change pi (&pi;), default = 3.14 </button>
       <button onclick="spheareArea()">Area of spheare. <br><span>4 * 3.14 (&pi;) * r²</span></button>
       <button onclick="spheareVolume()">Volume of spheare. <br><span>4 * 3.14 (&pi;) * r³ / 4 </span></button>
       <button onclick="coneArea()">Area of cone. <br><span>3.14 (&pi;) * r * s</span></button>
